@@ -29,6 +29,7 @@ BEGIN;
 UPDATE animals SET species = 'unspecified';
 SELECT species from animals;
 ROLLBACK;
+SELECT species from animals;
 
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
